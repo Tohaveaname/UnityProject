@@ -57,9 +57,8 @@ public class BookMaster : MonoBehaviour {
         if (Input.GetKeyDown("space"))
         {
             ++currentPage;
+            HandleText();
         }
-
-        
 	}
 
     //Displays the correct text at the correct page
