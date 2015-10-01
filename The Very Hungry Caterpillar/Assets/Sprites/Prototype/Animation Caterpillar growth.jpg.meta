@@ -1,0 +1,100 @@
+fileFormatVersion: 2
+guid: 5ca3b41e7cbee77468391bc2982b518d
+timeCreated: 1443082390
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Animation Caterpillar growth_0
+    21300002: Animation Caterpillar growth_1
+    21300004: Animation Caterpillar growth_2
+    21300006: Animation Caterpillar growth_3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Animation Caterpillar growth_0
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 137
+        width: 409
+        height: 167
+      alignment: 9
+      pivot: {x: .494586676, y: .44033888}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animation Caterpillar growth_1
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 120
+        width: 410
+        height: 185
+      alignment: 9
+      pivot: {x: .540000021, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animation Caterpillar growth_2
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 91
+        width: 413
+        height: 231
+      alignment: 9
+      pivot: {x: .529999971, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animation Caterpillar growth_3
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 83
+        width: 413
+        height: 259
+      alignment: 9
+      pivot: {x: .550000012, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,133 @@
+fileFormatVersion: 2
+guid: e706a648f24d51b4099c5b47077a8559
+timeCreated: 1443082736
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Animation Caterpillar Move_0
+    21300002: Animation Caterpillar Move_1
+    21300004: Animation Caterpillar Move_2
+    21300006: Animation Caterpillar Move_3
+    21300008: Animation Caterpillar Move_4
+    21300010: Animation Caterpillar Move_5
+    21300012: Animation Caterpillar Move_6
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Animation Caterpillar Move_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 28
+        width: 233
+        height: 95
+      alignment: 9
+      pivot: {x: .49723208, y: .461530417}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animation Caterpillar Move_1
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 28
+        width: 240
+        height: 95
+      alignment: 9
+      pivot: {x: .495521426, y: .454741716}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animation Caterpillar Move_2
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 27
+        width: 257
+        height: 97
+      alignment: 9
+      pivot: {x: .490798652, y: .444593608}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animation Caterpillar Move_3
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 25
+        width: 263
+        height: 95
+      alignment: 9
+      pivot: {x: .510626376, y: .457004666}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animation Caterpillar Move_4
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 23
+        width: 271
+        height: 95
+      alignment: 9
+      pivot: {x: .514279068, y: .443427086}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animation Caterpillar Move_5
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 21
+        width: 277
+        height: 95
+      alignment: 9
+      pivot: {x: .515523612, y: .447773457}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animation Caterpillar Move_6
+      rect:
+        serializedVersion: 2
+        x: 1699
+        y: 21
+        width: 281
+        height: 95
+      alignment: 9
+      pivot: {x: .532959402, y: .43732813}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

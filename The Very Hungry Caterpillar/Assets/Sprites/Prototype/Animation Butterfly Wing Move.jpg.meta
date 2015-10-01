@@ -1,0 +1,155 @@
+fileFormatVersion: 2
+guid: c5e7d826d31234d4eaeee5ee1a020528
+timeCreated: 1443081767
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Animation Butterfly Wing Move_0
+    21300002: Animation Butterfly Wing Move_1
+    21300004: Animation Butterfly Wing Move_2
+    21300006: Animation Butterfly Wing Move_3
+    21300008: Animation Butterfly Wing Move_4
+    21300010: Animation Butterfly Wing Move_5
+    21300012: Animation Butterfly Wing Move_6
+    21300014: Animation Butterfly Wing Move_7
+    21300016: Animation Butterfly Wing Move_8
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Animation Butterfly Wing Move_0
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 956
+        width: 550
+        height: 300
+      alignment: 9
+      pivot: {x: .489577234, y: .445920825}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animation Butterfly Wing Move_1
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 955
+        width: 550
+        height: 300
+      alignment: 9
+      pivot: {x: .503000736, y: .377262384}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animation Butterfly Wing Move_2
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 958
+        width: 550
+        height: 300
+      alignment: 9
+      pivot: {x: .489577204, y: .287130535}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animation Butterfly Wing Move_3
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 515
+        width: 550
+        height: 300
+      alignment: 9
+      pivot: {x: .489987135, y: .444948941}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animation Butterfly Wing Move_4
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 519
+        width: 550
+        height: 300
+      alignment: 9
+      pivot: {x: .50795567, y: .439898491}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animation Butterfly Wing Move_5
+      rect:
+        serializedVersion: 2
+        x: 1426
+        y: 476
+        width: 550
+        height: 300
+      alignment: 9
+      pivot: {x: .493095249, y: .502435088}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animation Butterfly Wing Move_6
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 59
+        width: 550
+        height: 300
+      alignment: 9
+      pivot: {x: .501271427, y: .589076459}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animation Butterfly Wing Move_7
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 69
+        width: 550
+        height: 300
+      alignment: 9
+      pivot: {x: .474377871, y: .511555672}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animation Butterfly Wing Move_8
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 79
+        width: 550
+        height: 300
+      alignment: 9
+      pivot: {x: .479623348, y: .425401866}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
