@@ -25,7 +25,13 @@ public class BookMaster : MonoBehaviour {
     public Text pageElevenPartTwo;
     public Text pageTwelve;
     public Text pageThirteen;
-
+    public GameObject moon;
+    public GameObject egg;
+    public GameObject brokenEgg;
+    public GameObject sunStatic;
+    public GameObject sunAnimation;
+    public GameObject caterpillar;
+    public GameObject butterfly;
 
     // Makes this class into a singleton as we don't want more than one book master
     void Awake()
@@ -58,6 +64,7 @@ public class BookMaster : MonoBehaviour {
         {
             ++currentPage;
             HandleText();
+            HandleScene();
         }
 	}
 
@@ -128,6 +135,136 @@ public class BookMaster : MonoBehaviour {
             case 16:
                 pageTwelve.gameObject.SetActive(false);
                 pageThirteen.gameObject.SetActive(true);
+                break;
+        }
+    }
+
+    //Handles The main characters and props on each page
+    void HandleScene()
+    {
+        switch (currentPage)
+        {
+            //Page 1
+            case 1:
+                moon.SetActive(true);
+                egg.SetActive(true);
+                break;
+            //Page 2 part 1
+            case 2:
+                moon.SetActive(false);
+                sunStatic.SetActive(true);
+                break;
+            //Page 2 part 2
+            case 3:
+                egg.SetActive(false);
+                sunStatic.SetActive(false);
+                brokenEgg.SetActive(true);
+                caterpillar.SetActive(true);
+                sunAnimation.SetActive(true);
+                break;
+            //Page 3
+            case 4:
+                brokenEgg.SetActive(false);
+                sunAnimation.SetActive(false);
+                break;
+            //Page 4
+            case 5:
+                //apple.SetActive(true);
+                
+                break;
+            //Page 5
+            case 6:
+                //apple.SetActive(false);
+                //pearOne.SetActive(true);
+                //pearTwo.SetActive(true);
+                break;
+            //Page 6
+            case 7:
+                //pearOne.SetActive(false);
+                //pearTwo.SetActive(false);
+                //plumOne.SetActive(true);
+                //plumTwo.SetActive(true);
+                //plumThree.SetActive(true);
+                break;
+            //Page 7
+            case 8:
+                //plumOne.SetActive(false);
+                //plumTwo.SetActive(false);
+                //plumThree.SetActive(false);
+                //strawberryOne.SetActive(true);
+                //strawberryTwo.SetActive(true);
+                //strawberryThree.SetActive(true);
+                //strawberryFour.SetActive(true);
+                break;
+            //Page 8
+            case 9:
+                //strawberryOne.SetActive(false);
+                //strawberryTwo.SetActive(false);
+                //strawberryThree.SetActive(false);
+                //strawberryFour.SetActive(false);
+                //orangeOne.SetActive(true);
+                //orangeTwo.SetActive(true);
+                //orangeThree.SetActive(true);
+                //orangeFour.SetActive(true);
+                //orangeFive.SetActive(true);
+                break;
+            //Page 9 part 1
+            case 10:
+                //orangeOne.SetActive(false);
+                //orangeTwo.SetActive(false);
+                //orangeThree.SetActive(false);
+                //orangeFour.SetActive(false);
+                //orangeFive.SetActive(false);
+                //chocolateCake.SetActive(true);
+                //iceCream.SetActive(true);
+                //pickle.SetActive(true);
+                //cheese.SetActive(true);
+                //salami.SetActive(true);
+                //lollipop.SetActive(true);
+                //pie.SetActive(true);
+                //sausage.SetActive(true);
+                //cupcake.SetActive(true);
+                //watermelon.SetActive(true);
+                break;
+            //Page 9 part 2
+            case 11:
+                
+                break;
+            //Page 10
+            case 12:
+                //chocolateCake.SetActive(false);
+                //iceCream.SetActive(false);
+                //pickle.SetActive(false);
+                //cheese.SetActive(false);
+                //salami.SetActive(false);
+                //lollipop.SetActive(false);
+                //pie.SetActive(false);
+                //sausage.SetActive(false);
+                //cupcake.SetActive(false);
+                //watermelon.SetActive(false);
+                //leaf.SetActive(true);
+                //caterpillar.SetActive(false);
+                //stomachAcheCaterpillar.SetActive(true);
+                break;
+            //Page 11 part 1
+            case 13:
+                //leaf.SetActive(false);
+                //staticCaterpillar.SetActive(true);
+                break;
+            //Page 11 part 2
+            case 14:
+                //staticCaterpillar.SetActive(false);
+                //fatCaterpillar.SetActive(true);
+                break;
+            //Page 12
+            case 15:
+                //fatCaterpillar.SetActive(false);
+                //cocoon.SetActive(true);
+                break;
+            //Page 13
+            case 16:
+                //cocoon.SetActive(false);
+                butterfly.SetActive(true);
                 break;
         }
     }
