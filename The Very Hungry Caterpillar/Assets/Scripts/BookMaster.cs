@@ -50,7 +50,7 @@ public class BookMaster : MonoBehaviour {
         DontDestroyOnLoad(gameObject);   
     }
 
-	// Use this for initialization
+    // Use this for initialization
 	void Start ()
     {
         currentPage = startPage;
@@ -170,7 +170,6 @@ public class BookMaster : MonoBehaviour {
             //Page 4
             case 5:
                 //apple.SetActive(true);
-                
                 break;
             //Page 5
             case 6:
@@ -228,7 +227,8 @@ public class BookMaster : MonoBehaviour {
                 break;
             //Page 9 part 2
             case 11:
-                
+                caterpillar.SetActive(false);
+                //stomachAcheCaterpillar.SetActive(true);
                 break;
             //Page 10
             case 12:
@@ -243,12 +243,14 @@ public class BookMaster : MonoBehaviour {
                 //cupcake.SetActive(false);
                 //watermelon.SetActive(false);
                 //leaf.SetActive(true);
-                //caterpillar.SetActive(false);
-                //stomachAcheCaterpillar.SetActive(true);
+                //stomachAcheCaterpillar.SetActive(false);
+                caterpillar.SetActive(true);
+
                 break;
             //Page 11 part 1
             case 13:
                 //leaf.SetActive(false);
+                caterpillar.SetActive(false);
                 //staticCaterpillar.SetActive(true);
                 break;
             //Page 11 part 2
