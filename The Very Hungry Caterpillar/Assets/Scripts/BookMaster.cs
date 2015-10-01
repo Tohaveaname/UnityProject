@@ -31,6 +31,7 @@ public class BookMaster : MonoBehaviour {
     public GameObject sunStatic;
     public GameObject sunAnimation;
     public GameObject caterpillar;
+    public GameObject stomachAcheCaterpillar;
     public GameObject butterfly;
 
     // Makes this class into a singleton as we don't want more than one book master
@@ -228,7 +229,7 @@ public class BookMaster : MonoBehaviour {
             //Page 9 part 2
             case 11:
                 caterpillar.SetActive(false);
-                //stomachAcheCaterpillar.SetActive(true);
+                stomachAcheCaterpillar.SetActive(true);
                 break;
             //Page 10
             case 12:
@@ -243,14 +244,13 @@ public class BookMaster : MonoBehaviour {
                 //cupcake.SetActive(false);
                 //watermelon.SetActive(false);
                 //leaf.SetActive(true);
-                //stomachAcheCaterpillar.SetActive(false);
+                stomachAcheCaterpillar.SetActive(false);
                 caterpillar.SetActive(true);
 
                 break;
             //Page 11 part 1
             case 13:
                 //leaf.SetActive(false);
-                caterpillar.SetActive(false);
                 //staticCaterpillar.SetActive(true);
                 break;
             //Page 11 part 2
@@ -260,6 +260,7 @@ public class BookMaster : MonoBehaviour {
                 break;
             //Page 12
             case 15:
+                caterpillar.SetActive(false);
                 //fatCaterpillar.SetActive(false);
                 //cocoon.SetActive(true);
                 break;

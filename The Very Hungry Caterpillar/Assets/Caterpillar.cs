@@ -4,11 +4,12 @@ using System.Collections;
 public class Caterpillar : MonoBehaviour {
 
     public BookMaster bookmaster;
+    Animator animator;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
+    // Use this for initialization
+    void Start () {
+        animator = GetComponent<Animator>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -60,6 +61,12 @@ public class Caterpillar : MonoBehaviour {
             case 12:
                 gameObject.transform.localScale = new Vector3(0.8f, 0.8f, 0);
                 gameObject.transform.position = new Vector3(0, 0, 0);
+                break;
+            // Page 11 part 2
+            case 14:
+                gameObject.transform.localScale = new Vector3(1.0f, 1.0f, 0);
+                gameObject.transform.position = new Vector3(0, 0, 0);
+                animator.SetTrigger("CaterpillarGrow");
                 break;
             default:
                 break;
