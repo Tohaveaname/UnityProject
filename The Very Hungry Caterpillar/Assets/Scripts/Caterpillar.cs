@@ -22,6 +22,11 @@ public class Caterpillar : MonoBehaviour {
     {
         switch (bookmaster.currentPage)
         {
+            // Page 2 part 2
+            case 3:
+                gameObject.transform.localScale = new Vector3(0.28f, 0.28f, 0);
+                gameObject.transform.position = new Vector3(-0.83f, -1.75f, 0);
+                break;
             // Page 3
             case 4:
                 gameObject.transform.localScale = new Vector3(-1.0f, 1.0f, 0);
