@@ -54,17 +54,17 @@ public class Caterpillar : MonoBehaviour {
                 break;
             // Page 9 part 1
             case 10:
-                gameObject.transform.localScale = new Vector3(0.3f, 0.3f, 0);
+                gameObject.transform.localScale = new Vector3(0.4f, 0.4f, 0);
                 gameObject.transform.position = new Vector3(3.6f, -2f, 0);
                 break;
             // Page 10
             case 12:
-                gameObject.transform.localScale = new Vector3(0.8f, 0.8f, 0);
+                gameObject.transform.localScale = new Vector3(1.5f, 1.5f, 0);
                 gameObject.transform.position = new Vector3(0, 0, 0);
                 break;
             // Page 11 part 2
             case 14:
-                gameObject.transform.localScale = new Vector3(1.0f, 1.0f, 0);
+                gameObject.transform.localScale = new Vector3(1.7f, 1.7f, 0);
                 gameObject.transform.position = new Vector3(0, 0, 0);
                 animator.SetTrigger("CaterpillarGrow");
                 break;

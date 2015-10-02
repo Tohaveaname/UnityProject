@@ -7,8 +7,6 @@ public class BookMaster : MonoBehaviour {
     public static BookMaster instance = null;
     public int startPage = 1;
     public int currentPage = 1;
-
-    //public GUIText[] pages;
     public Text pageOne;
     public Text pageTwoPartOne;
     public Text pageTwoPartTwo;
@@ -32,6 +30,8 @@ public class BookMaster : MonoBehaviour {
     public GameObject sunAnimation;
     public GameObject caterpillar;
     public GameObject stomachAcheCaterpillar;
+    public GameObject leaf;
+    public GameObject cocoon;
     public GameObject butterfly;
 
     // Makes this class into a singleton as we don't want more than one book master
@@ -74,68 +74,101 @@ public class BookMaster : MonoBehaviour {
     {
         switch (currentPage)
         {
+            // Page 1
             case 1:
                 pageOne.gameObject.SetActive(true);
                 break;
+
+            // Page 2 part 1
             case 2:
                 pageOne.gameObject.SetActive(false);
                 pageTwoPartOne.gameObject.SetActive(true);
                 break;
+
+            // Page 2 part 2
             case 3:
                 pageTwoPartTwo.gameObject.SetActive(true);
                 break;
+
+            // Page 3
             case 4:
                 pageTwoPartOne.gameObject.SetActive(false);
                 pageTwoPartTwo.gameObject.SetActive(false);
                 pageThree.gameObject.SetActive(true);
                 break;
+
+            // Page 4
             case 5:
                 pageThree.gameObject.SetActive(false);
                 pageFour.gameObject.SetActive(true);
                 break;
+            
+            // Page 5
             case 6:
                 pageFour.gameObject.SetActive(false);
                 pageFive.gameObject.SetActive(true);
                 break;
+
+            // Page 6
             case 7:
                 pageFive.gameObject.SetActive(false);
                 pageSix.gameObject.SetActive(true);
                 break;
+
+            // Page 7
             case 8:
                 pageSix.gameObject.SetActive(false);
                 pageSeven.gameObject.SetActive(true);
                 break;
+
+            // Page 8
             case 9:
                 pageSeven.gameObject.SetActive(false);
                 pageEight.gameObject.SetActive(true);
                 break;
+
+            // Page 9 part 1
             case 10:
                 pageEight.gameObject.SetActive(false);
                 pageNinePartOne.gameObject.SetActive(true);
                 break;
+
+            // Page 9 part 2
             case 11:
                 pageNinePartTwo.gameObject.SetActive(true);
                 break;
+
+            // Page 10
             case 12:
                 pageNinePartOne.gameObject.SetActive(false);
                 pageNinePartTwo.gameObject.SetActive(false);
                 pageTen.gameObject.SetActive(true);
                 break;
+            
+            // Page 11 part 1
             case 13:
                 pageTen.gameObject.SetActive(false);
                 pageElevenPartOne.gameObject.SetActive(true);
                 break;
+
+            // Page 11 part 2
             case 14:
                 pageElevenPartTwo.gameObject.SetActive(true);
                 break;
+
+            // Page 12
             case 15:
                 pageElevenPartOne.gameObject.SetActive(false);
                 pageElevenPartTwo.gameObject.SetActive(false);
                 pageTwelve.gameObject.SetActive(true);
                 break;
+
+            // Page 13
             case 16:
                 pageTwelve.gameObject.SetActive(false);
                 pageThirteen.gameObject.SetActive(true);
+                break;
+            default:
                 break;
         }
     }
@@ -150,11 +183,13 @@ public class BookMaster : MonoBehaviour {
                 moon.SetActive(true);
                 egg.SetActive(true);
                 break;
+
             //Page 2 part 1
             case 2:
                 moon.SetActive(false);
                 sunStatic.SetActive(true);
                 break;
+
             //Page 2 part 2
             case 3:
                 egg.SetActive(false);
@@ -163,21 +198,26 @@ public class BookMaster : MonoBehaviour {
                 caterpillar.SetActive(true);
                 sunAnimation.SetActive(true);
                 break;
+
             //Page 3
             case 4:
+                leaf.SetActive(false);
                 brokenEgg.SetActive(false);
                 sunAnimation.SetActive(false);
                 break;
+
             //Page 4
             case 5:
                 //apple.SetActive(true);
                 break;
+
             //Page 5
             case 6:
                 //apple.SetActive(false);
                 //pearOne.SetActive(true);
                 //pearTwo.SetActive(true);
                 break;
+
             //Page 6
             case 7:
                 //pearOne.SetActive(false);
@@ -186,6 +226,7 @@ public class BookMaster : MonoBehaviour {
                 //plumTwo.SetActive(true);
                 //plumThree.SetActive(true);
                 break;
+
             //Page 7
             case 8:
                 //plumOne.SetActive(false);
@@ -196,6 +237,7 @@ public class BookMaster : MonoBehaviour {
                 //strawberryThree.SetActive(true);
                 //strawberryFour.SetActive(true);
                 break;
+
             //Page 8
             case 9:
                 //strawberryOne.SetActive(false);
@@ -208,6 +250,7 @@ public class BookMaster : MonoBehaviour {
                 //orangeFour.SetActive(true);
                 //orangeFive.SetActive(true);
                 break;
+
             //Page 9 part 1
             case 10:
                 //orangeOne.SetActive(false);
@@ -226,11 +269,13 @@ public class BookMaster : MonoBehaviour {
                 //cupcake.SetActive(true);
                 //watermelon.SetActive(true);
                 break;
+
             //Page 9 part 2
             case 11:
                 caterpillar.SetActive(false);
                 stomachAcheCaterpillar.SetActive(true);
                 break;
+
             //Page 10
             case 12:
                 //chocolateCake.SetActive(false);
@@ -243,14 +288,14 @@ public class BookMaster : MonoBehaviour {
                 //sausage.SetActive(false);
                 //cupcake.SetActive(false);
                 //watermelon.SetActive(false);
-                //leaf.SetActive(true);
+                leaf.SetActive(true);
                 stomachAcheCaterpillar.SetActive(false);
                 caterpillar.SetActive(true);
 
                 break;
             //Page 11 part 1
             case 13:
-                //leaf.SetActive(false);
+                leaf.SetActive(false);
                 //staticCaterpillar.SetActive(true);
                 break;
             //Page 11 part 2
@@ -262,12 +307,14 @@ public class BookMaster : MonoBehaviour {
             case 15:
                 caterpillar.SetActive(false);
                 //fatCaterpillar.SetActive(false);
-                //cocoon.SetActive(true);
+                cocoon.SetActive(true);
                 break;
             //Page 13
             case 16:
-                //cocoon.SetActive(false);
+                cocoon.SetActive(false);
                 butterfly.SetActive(true);
+                break;
+            default:
                 break;
         }
     }
