@@ -23,6 +23,12 @@ public class BookMaster : MonoBehaviour {
     public Text pageElevenPartTwo;
     public Text pageTwelve;
     public Text pageThirteen;
+    public GameObject notFruitFood;
+    public GameObject apple;
+    public GameObject pears;
+    public GameObject plums;
+    public GameObject strawberries;
+    public GameObject oranges;
     public GameObject moon;
     public GameObject egg;
     public GameObject brokenEgg;
@@ -208,66 +214,37 @@ public class BookMaster : MonoBehaviour {
 
             //Page 4
             case 5:
-                //apple.SetActive(true);
+                apple.SetActive(true);
                 break;
 
             //Page 5
             case 6:
-                //apple.SetActive(false);
-                //pearOne.SetActive(true);
-                //pearTwo.SetActive(true);
+                apple.SetActive(false);
+                pears.SetActive(true);
                 break;
 
             //Page 6
             case 7:
-                //pearOne.SetActive(false);
-                //pearTwo.SetActive(false);
-                //plumOne.SetActive(true);
-                //plumTwo.SetActive(true);
-                //plumThree.SetActive(true);
+                pears.SetActive(false);
+                plums.SetActive(true);
                 break;
 
             //Page 7
             case 8:
-                //plumOne.SetActive(false);
-                //plumTwo.SetActive(false);
-                //plumThree.SetActive(false);
-                //strawberryOne.SetActive(true);
-                //strawberryTwo.SetActive(true);
-                //strawberryThree.SetActive(true);
-                //strawberryFour.SetActive(true);
+                plums.SetActive(false);
+                strawberries.SetActive(true);
                 break;
 
             //Page 8
             case 9:
-                //strawberryOne.SetActive(false);
-                //strawberryTwo.SetActive(false);
-                //strawberryThree.SetActive(false);
-                //strawberryFour.SetActive(false);
-                //orangeOne.SetActive(true);
-                //orangeTwo.SetActive(true);
-                //orangeThree.SetActive(true);
-                //orangeFour.SetActive(true);
-                //orangeFive.SetActive(true);
+                strawberries.SetActive(false);
+                oranges.SetActive(true);
                 break;
 
             //Page 9 part 1
             case 10:
-                //orangeOne.SetActive(false);
-                //orangeTwo.SetActive(false);
-                //orangeThree.SetActive(false);
-                //orangeFour.SetActive(false);
-                //orangeFive.SetActive(false);
-                //chocolateCake.SetActive(true);
-                //iceCream.SetActive(true);
-                //pickle.SetActive(true);
-                //cheese.SetActive(true);
-                //salami.SetActive(true);
-                //lollipop.SetActive(true);
-                //pie.SetActive(true);
-                //sausage.SetActive(true);
-                //cupcake.SetActive(true);
-                //watermelon.SetActive(true);
+                oranges.SetActive(false);
+                notFruitFood.SetActive(true);
                 break;
 
             //Page 9 part 2
@@ -278,42 +255,37 @@ public class BookMaster : MonoBehaviour {
 
             //Page 10
             case 12:
-                //chocolateCake.SetActive(false);
-                //iceCream.SetActive(false);
-                //pickle.SetActive(false);
-                //cheese.SetActive(false);
-                //salami.SetActive(false);
-                //lollipop.SetActive(false);
-                //pie.SetActive(false);
-                //sausage.SetActive(false);
-                //cupcake.SetActive(false);
-                //watermelon.SetActive(false);
+                notFruitFood.SetActive(false);
                 leaf.SetActive(true);
                 stomachAcheCaterpillar.SetActive(false);
                 caterpillar.SetActive(true);
-
                 break;
+
             //Page 11 part 1
             case 13:
                 leaf.SetActive(false);
                 //staticCaterpillar.SetActive(true);
                 break;
+
             //Page 11 part 2
             case 14:
                 //staticCaterpillar.SetActive(false);
                 //fatCaterpillar.SetActive(true);
                 break;
+
             //Page 12
             case 15:
                 caterpillar.SetActive(false);
                 //fatCaterpillar.SetActive(false);
                 cocoon.SetActive(true);
                 break;
+
             //Page 13
             case 16:
                 cocoon.SetActive(false);
                 butterfly.SetActive(true);
                 break;
+
             default:
                 break;
         }
