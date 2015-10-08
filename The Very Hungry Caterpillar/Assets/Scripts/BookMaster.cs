@@ -23,12 +23,13 @@ public class BookMaster : MonoBehaviour {
     public Text pageElevenPartTwo;
     public Text pageTwelve;
     public Text pageThirteen;
-    public GameObject notFruitFood;
+    public GameObject nightTimeBackground;
     public GameObject apple;
     public GameObject pears;
     public GameObject plums;
     public GameObject strawberries;
     public GameObject oranges;
+    public GameObject notFruitFood;
     public GameObject moon;
     public GameObject egg;
     public GameObject brokenEgg;
@@ -186,12 +187,14 @@ public class BookMaster : MonoBehaviour {
         {
             //Page 1
             case 1:
+                nightTimeBackground.SetActive(true);
                 moon.SetActive(true);
                 egg.SetActive(true);
                 break;
 
             //Page 2 part 1
             case 2:
+                nightTimeBackground.SetActive(true);
                 moon.SetActive(false);
                 sunStatic.SetActive(true);
                 break;
