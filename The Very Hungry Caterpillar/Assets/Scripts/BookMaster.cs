@@ -41,6 +41,7 @@ public class BookMaster : MonoBehaviour {
     public GameObject leaf;
     public GameObject cocoon;
     public GameObject butterfly;
+    public GameObject openGesture;
 
     // Makes this class into a singleton as we don't want more than one book master
     void Awake()
@@ -169,6 +170,7 @@ public class BookMaster : MonoBehaviour {
                 pageElevenPartTwo.gameObject.SetActive(false);
                 pageElevenPartThree.gameObject.SetActive(true);
                 break;
+
             // Page 12
             case 16:
                 pageElevenPartOne.gameObject.SetActive(false);
@@ -273,7 +275,16 @@ public class BookMaster : MonoBehaviour {
             //Page 11 part 1
             case 13:
                 leaf.SetActive(false);
-                //staticCaterpillar.SetActive(true);
+                break;
+
+            //Page 11 part 2
+            case 14:
+                openGesture.SetActive(true);
+                break;
+            
+            //Page 11 part 3
+            case 15:
+                openGesture.SetActive(false);
                 break;
 
             //Page 12
