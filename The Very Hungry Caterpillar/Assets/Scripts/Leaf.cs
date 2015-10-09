@@ -31,7 +31,7 @@ public class Leaf : MonoBehaviour
                 break;
 
             // Page 10
-            case 12:
+            case 13:
                 gameObject.transform.localScale = new Vector3(2.2f, 1.7f, 0);
                 gameObject.transform.position = new Vector3(-0.19f, -0.77f, 0);
                 break;
