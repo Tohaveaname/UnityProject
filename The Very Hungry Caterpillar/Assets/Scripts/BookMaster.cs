@@ -11,7 +11,7 @@ public class BookMaster : MonoBehaviour {
     public int startPage = 1;
     public int currentPage = 1;
 
-    //Text for pages
+    // Text for pages.
     public Text pageOne;
     public Text pageTwoPartOne;
     public Text pageTwoPartTwo;
@@ -31,7 +31,7 @@ public class BookMaster : MonoBehaviour {
     public Text pageTwelve;
     public Text pageThirteen;
 
-    //Characters and Scenery
+    //Characters and Scenery.
     public GameObject nightTimeBackground;
     public GameObject apple;
     public GameObject pears;
@@ -57,12 +57,12 @@ public class BookMaster : MonoBehaviour {
     // Makes this class into a singleton as we don't want more than one book master
     void Awake()
     {
-        // Checks if instance already exists.
+        // Checks if instance already exists
         if (instance == null)
         {
             instance = this;
         }
-        // If an instance already exists and it's not this.
+        // If an instance already exists and it's not this
         else if (instance != this)
         {
             Destroy(gameObject);
