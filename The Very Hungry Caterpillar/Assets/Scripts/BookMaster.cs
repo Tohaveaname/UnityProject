@@ -21,6 +21,7 @@ public class BookMaster : MonoBehaviour {
     public Text pageTen;
     public Text pageElevenPartOne;
     public Text pageElevenPartTwo;
+    public Text pageElevenPartThree;
     public Text pageTwelve;
     public Text pageThirteen;
     public GameObject nightTimeBackground;
@@ -162,16 +163,21 @@ public class BookMaster : MonoBehaviour {
             case 14:
                 pageElevenPartTwo.gameObject.SetActive(true);
                 break;
-
-            // Page 12
+            
+            // Page 11 part 3
             case 15:
-                pageElevenPartOne.gameObject.SetActive(false);
                 pageElevenPartTwo.gameObject.SetActive(false);
+                pageElevenPartThree.gameObject.SetActive(true);
+                break;
+            // Page 12
+            case 16:
+                pageElevenPartOne.gameObject.SetActive(false);
+                pageElevenPartThree.gameObject.SetActive(false);
                 pageTwelve.gameObject.SetActive(true);
                 break;
 
             // Page 13
-            case 16:
+            case 17:
                 pageTwelve.gameObject.SetActive(false);
                 pageThirteen.gameObject.SetActive(true);
                 break;
@@ -270,21 +276,15 @@ public class BookMaster : MonoBehaviour {
                 //staticCaterpillar.SetActive(true);
                 break;
 
-            //Page 11 part 2
-            case 14:
-                //staticCaterpillar.SetActive(false);
-                //fatCaterpillar.SetActive(true);
-                break;
-
             //Page 12
-            case 15:
+            case 16:
                 caterpillar.SetActive(false);
                 //fatCaterpillar.SetActive(false);
                 cocoon.SetActive(true);
                 break;
 
             //Page 13
-            case 16:
+            case 17:
                 cocoon.SetActive(false);
                 butterfly.SetActive(true);
                 break;
