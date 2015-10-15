@@ -4,14 +4,14 @@ using System.Collections;
 
 public class BookMaster : MonoBehaviour {
 
-    //Establishing instance for singleton pattern
+    //Establishing instance for singleton pattern.
     public static BookMaster instance = null;
 
     //Initiates start page and current page to one.
     public int startPage = 1;
     public int currentPage = 1;
 
-    // Text for pages.
+    //Text for pages.
     public Text pageOne;
     public Text pageTwoPartOne;
     public Text pageTwoPartTwo;
@@ -50,19 +50,20 @@ public class BookMaster : MonoBehaviour {
     public GameObject cocoon;
     public GameObject butterfly;
 
-    //Gestures
+    //Gestures.
     public GameObject openGesture;
     public GameObject waveGesture;
 
-    // Makes this class into a singleton as we don't want more than one book master
+    //Makes this class into a singleton as we don't want more 
+    //than one book master.
     void Awake()
     {
-        // Checks if instance already exists
+        //Checks if instance already exists.
         if (instance == null)
         {
             instance = this;
         }
-        // If an instance already exists and it's not this
+        //If an instance already exists and it's not this.
         else if (instance != this)
         {
             Destroy(gameObject);
@@ -71,16 +72,16 @@ public class BookMaster : MonoBehaviour {
         DontDestroyOnLoad(gameObject);   
     }
 
-    // Use this for initialization
+    //Sets the current page to the start page.
 	void Start ()
     {
         currentPage = startPage;
 	}
 	
-	// Update is called once per frame
+	//Update is called once per frame.
 	void Update ()
     {
-        // Moves on if a page when space is pressed.
+        //Moves on a page when space is pressed that frame.
         if (Input.GetKeyDown("space"))
         {
             ++currentPage;
@@ -89,147 +90,149 @@ public class BookMaster : MonoBehaviour {
         }
 	}
 
-    //Displays the correct text at the correct page
+    //Displays the correct text at the correct page.
     void HandleText()
     {
         switch (currentPage)
         {
-            // Page 1
+            //Page 1.
             case 1:
                 pageOne.gameObject.SetActive(true);
                 break;
 
-            // Page 2 part 1
+            //Page 2 part 1.
             case 2:
                 pageOne.gameObject.SetActive(false);
                 pageTwoPartOne.gameObject.SetActive(true);
                 break;
 
-            // Page 2 part 2
+            //Page 2 part 2.
             case 3:
                 pageTwoPartTwo.gameObject.SetActive(true);
                 break;
 
-            // Page 2 part 3
+            //Page 2 part 3.
             case 4:
                 pageTwoPartTwo.gameObject.SetActive(false);
                 pageTwoPartThree.gameObject.SetActive(true);
                 break;
 
-            // Page 3
+            //Page 3.
             case 5:
                 pageTwoPartOne.gameObject.SetActive(false);
                 pageTwoPartThree.gameObject.SetActive(false);
                 pageThree.gameObject.SetActive(true);
                 break;
 
-            // Page 4
+            //Page 4.
             case 6:
                 pageThree.gameObject.SetActive(false);
                 pageFour.gameObject.SetActive(true);
                 break;
             
-            // Page 5
+            //Page 5.
             case 7:
                 pageFour.gameObject.SetActive(false);
                 pageFive.gameObject.SetActive(true);
                 break;
 
-            // Page 6
+            //Page 6.
             case 8:
                 pageFive.gameObject.SetActive(false);
                 pageSix.gameObject.SetActive(true);
                 break;
 
-            // Page 7
+            //Page 7.
             case 9:
                 pageSix.gameObject.SetActive(false);
                 pageSeven.gameObject.SetActive(true);
                 break;
 
-            // Page 8
+            //Page 8.
             case 10:
                 pageSeven.gameObject.SetActive(false);
                 pageEight.gameObject.SetActive(true);
                 break;
 
-            // Page 9 part 1
+            //Page 9 part 1.
             case 11:
                 pageEight.gameObject.SetActive(false);
                 pageNinePartOne.gameObject.SetActive(true);
                 break;
 
-            // Page 9 part 2
+            //Page 9 part 2.
             case 12:
                 pageNinePartTwo.gameObject.SetActive(true);
                 break;
 
-            // Page 10
+            //Page 10.
             case 13:
                 pageNinePartOne.gameObject.SetActive(false);
                 pageNinePartTwo.gameObject.SetActive(false);
                 pageTen.gameObject.SetActive(true);
                 break;
             
-            // Page 11 part 1
+            //Page 11 part 1.
             case 14:
                 pageTen.gameObject.SetActive(false);
                 pageElevenPartOne.gameObject.SetActive(true);
                 break;
 
-            // Page 11 part 2
+            //Page 11 part 2.
             case 15:
                 pageElevenPartTwo.gameObject.SetActive(true);
                 break;
             
-            // Page 11 part 3
+            // Page 11 part 3.
             case 16:
                 pageElevenPartTwo.gameObject.SetActive(false);
                 pageElevenPartThree.gameObject.SetActive(true);
                 break;
 
-            // Page 12
+            //Page 12.
             case 17:
                 pageElevenPartOne.gameObject.SetActive(false);
                 pageElevenPartThree.gameObject.SetActive(false);
                 pageTwelve.gameObject.SetActive(true);
                 break;
 
-            // Page 13
+            //Page 13..
             case 18:
                 pageTwelve.gameObject.SetActive(false);
                 pageThirteen.gameObject.SetActive(true);
                 break;
+
+            //The default is for the switch statement to do nothing.
             default:
                 break;
         }
     }
 
-    //Handles The main characters and props on each page
+    //Handles The main characters and props on each page.
     void HandleScene()
     {
         switch (currentPage)
         {
-            //Page 1
+            //Page 1.
             case 1:
                 nightTimeBackground.SetActive(true);
                 moon.SetActive(true);
                 egg.SetActive(true);
                 break;
 
-            //Page 2 part 1
+            //Page 2 part 1.
             case 2:
-                nightTimeBackground.SetActive(true);
+                nightTimeBackground.SetActive(false);
                 moon.SetActive(false);
                 sunStatic.SetActive(true);
                 break;
 
-            //Page 2 part 2
+            //Page 2 part 2.
             case 3:
                 waveGesture.SetActive(true);
                 break;
 
-            // Page 2 part 3
+            // Page 2 part 3.
             case 4:
                 waveGesture.SetActive(false);
                 egg.SetActive(false);
@@ -239,55 +242,55 @@ public class BookMaster : MonoBehaviour {
                 sunAnimation.SetActive(true);
                 break;
 
-            //Page 3
+            //Page 3.
             case 5:
                 leaf.SetActive(false);
                 brokenEgg.SetActive(false);
                 sunAnimation.SetActive(false);
                 break;
 
-            //Page 4
+            //Page 4.
             case 6:
                 apple.SetActive(true);
                 break;
 
-            //Page 5
+            //Page 5.
             case 7:
                 apple.SetActive(false);
                 pears.SetActive(true);
                 break;
 
-            //Page 6
+            //Page 6.
             case 8:
                 pears.SetActive(false);
                 plums.SetActive(true);
                 break;
 
-            //Page 7
+            //Page 7.
             case 9:
                 plums.SetActive(false);
                 strawberries.SetActive(true);
                 break;
 
-            //Page 8
+            //Page 8.
             case 10:
                 strawberries.SetActive(false);
                 oranges.SetActive(true);
                 break;
 
-            //Page 9 part 1
+            //Page 9 part 1.
             case 11:
                 oranges.SetActive(false);
                 notFruitFood.SetActive(true);
                 break;
 
-            //Page 9 part 2
+            //Page 9 part 2.
             case 12:
                 caterpillar.SetActive(false);
                 stomachAcheCaterpillar.SetActive(true);
                 break;
 
-            //Page 10
+            //Page 10.
             case 13:
                 notFruitFood.SetActive(false);
                 leaf.SetActive(true);
@@ -295,34 +298,34 @@ public class BookMaster : MonoBehaviour {
                 caterpillar.SetActive(true);
                 break;
 
-            //Page 11 part 1
+            //Page 11 part 1.
             case 14:
                 leaf.SetActive(false);
                 break;
 
-            //Page 11 part 2
+            //Page 11 part 2.
             case 15:
                 openGesture.SetActive(true);
                 break;
             
-            //Page 11 part 3
+            //Page 11 part 3.
             case 16:
                 openGesture.SetActive(false);
                 break;
 
-            //Page 12
+            //Page 12.
             case 17:
                 caterpillar.SetActive(false);
-                //fatCaterpillar.SetActive(false);
                 cocoon.SetActive(true);
                 break;
 
-            //Page 13
+            //Page 13.
             case 18:
                 cocoon.SetActive(false);
                 butterfly.SetActive(true);
                 break;
 
+            //The default is for the switch statement to do nothing.
             default:
                 break;
         }

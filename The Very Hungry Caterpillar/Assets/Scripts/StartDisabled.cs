@@ -3,14 +3,9 @@ using System.Collections;
 
 public class StartDisabled : MonoBehaviour {
 
-	// Use this for initialization
+	//Starts the object as not active.
 	void Start ()
     {
         gameObject.SetActive(false);
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
 	}
 }
