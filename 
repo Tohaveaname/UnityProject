@@ -1,0 +1,311 @@
+[33mcommit 1aa131910c621a1e345b3f46166816e018d33cb6[m
+Author: Nick Bedford <nickbedford@sky.com>
+Date:   Thu Oct 15 15:09:03 2015 +0100
+
+    Made comments very clear.
+    
+    I realised that the comments were difficult to follow for other people so I
+    rewrote most of them and added quite a few into the various switch
+    statements to make it clear above each case what that specific case made
+    the script do.
+
+[33mcommit 8bdef908a33111d180da72fb5143a06bc9f5a013[m
+Author: Nick Bedford <nickbedford@sky.com>
+Date:   Thu Oct 15 11:29:59 2015 +0100
+
+    Removed irrelivant script and changed comments.
+    
+    Realised BlackBackgroundScript was still attached to the
+    NightBackground object so I have removed it and deleted the
+    script. Also deleted unnecessary functions that were not
+    being used in the scripts.
+    
+        Tidied up comments in all scripts to make them have uniform
+    presentation. Added some comments to make code clearer.
+
+[33mcommit e1c29f1684c931b669ee5eb02a4b20a9b7443187[m
+Merge: b9c036b ccbf5b4
+Author: Nick Bedford <nickbedford@sky.com>
+Date:   Fri Oct 9 16:00:06 2015 +0100
+
+    Merge branch 'master' of https://github.com/Tohaveaname/UnityProject
+    
+    Unsure of what the conflict was as the code was the same.
+
+[33mcommit b9c036b46ace2e292e02408be3b307a4d8552190[m
+Author: Nick Bedford <nickbedford@sky.com>
+Date:   Fri Oct 9 15:46:35 2015 +0100
+
+    Added second hand gesture.
+    
+    Added second hand gesture which caused the case numbers for
+    each page after page 2 part 3 to be incremented by one.
+    
+    This effected BookMaster, Caterpillar and Leaf scripts.
+    
+    This was done rather easily as only the case numbers needed to change.
+    
+    And BookMaster got an extra case for 2 part 3.
+
+[33mcommit 52a699062547a9054acf5cda38b83662492d5056[m
+Author: Nick Bedford <nickbedford@sky.com>
+Date:   Fri Oct 9 13:04:50 2015 +0100
+
+    Added a new gesture and reorganised Assets file
+    
+    Created a waving hand gesture animation.
+    
+    Added some files to the assets folder for organisational purposes.
+    
+    Added scenery and gestures files to png folder in sprites and
+    put relevant sprites into the appropriate folders.
+    
+    Added prototype and gestures folder into Animation controller
+    and added relevant animation controllers into the appropriate folders.
+
+[33mcommit ccbf5b446ff5a7393fb638735144f035a37e365d[m
+Author: Nick Bedford <nickbedford@sky.com>
+Date:   Fri Oct 9 13:04:50 2015 +0100
+
+    Added two new gestures and reorganised Assets file
+    
+    Created a hand opening gesture animation and a waving hand
+    gesture animation.
+    
+    Added hand opening animation into the book, made changes to the
+    BookMaster script to allow for this. Needed to add extra case in
+    switch statement in HandleScene() for Page 11 part 3. This was needed to
+    add the gesture into the book.
+    
+    Have not put waving hand into the book yet.
+    
+    Added some files to the assets folder for organisational purposes.
+
+[33mcommit 211a4d308e7f1978ee3374ec73455fa372b36217[m
+Author: Nick Bedford <nickbedford@sky.com>
+Date:   Fri Oct 9 10:38:02 2015 +0100
+
+    Started adding gestures to the project
+    
+    Added a hand opening animation to the project.
+    
+    Changed Caterpillar script and BookMaster script to handle an extra part
+    to page 11 where the gesture will be placed.
+    
+    Added a gesture tag to Unity so the gestures will always be placed
+    at the front of the scene.
+    
+    Also deleted dated gestures prefab as it was not needed.
+
+[33mcommit 8ddfe18373ea3aae4726d6411311402f33547cd6[m
+Author: Nick Bedford <nickbedford@sky.com>
+Date:   Thu Oct 8 15:27:27 2015 +0100
+
+    Reorganised unity and modified BookMaster.
+    
+    Reorganised Unity project so it is a lot more tidy.
+    Made a lot of the props child object of related object e.g.
+    all of the fruits are now a child of Fruits which is a child of Food.
+    
+    Tidied up BookMaster script by adding the nightTimeBackground to it and
+    modified HandleScene() to cope with this.
+
+[33mcommit aa915ae66bddd10850a469f305532d39ecf4ee71[m
+Author: Nick Bedford <nickbedford@sky.com>
+Date:   Thu Oct 8 13:10:53 2015 +0100
+
+    Added the food activation in bookmaster.
+    
+    Added these GameObjects to the BookMaster script: notFruitFood,
+    apple, pears, plums, strawberries and oranges.
+    
+    Updated the HandleScene() to accommodate these new gameObjects.
+    
+    These gameObjects now activate on the appropriate page.
+
+[33mcommit 0f9d172733b15d9d49b3df09b115464636aef479[m
+Author: Nick Bedford <nickbedford@sky.com>
+Date:   Thu Oct 8 11:21:12 2015 +0100
+
+    Added all of the food to the project.
+    
+    Added all of the food pngs and reorganised the files in unity to make
+    it easier to navigate around the project.
+    
+    Also placed all of the foods in the book in the correct positions.
+
+[33mcommit a16895e3365fddf562e05e5199a274290bdb0922[m
+Author: Nick Bedford <nickbedford@sky.com>
+Date:   Fri Oct 2 15:50:26 2015 +0100
+
+    Adjusted scenery
+    
+    Moved some of the characters and scenery around to make the
+    pages look better.
+
+[33mcommit 0881a8d63cc08aaa034e21a92a27963263a634a4[m
+Author: Nick Bedford <nickbedford@sky.com>
+Date:   Fri Oct 2 14:56:47 2015 +0100
+
+    Added non-coloured .pngs to game.
+    
+    Added these images as pngs: Broken Egg, Butterfly, Caterpillar
+    Stomach Ache, Sun, Moon, Egg, Leaf and Cocoon.
+    
+    Adjusted prefabs to take new png images.
+    
+    Adjusted Caterpillar script to accomodate smaller image, by
+    increasing the local scale values in CaterpillarAction().
+    
+    Adjusted Leaf script to accomodate smaller image, by increasing
+    the local scale values in LeafAction().
+    
+    Keeping jpeg versions of the various characters in the build
+    for now just incase they are needed later.
+
+[33mcommit 83f03b4b093575b39c48888631dd6493e4d8d17a[m
+Author: Nick Bedford <nickbedford@sky.com>
+Date:   Fri Oct 2 10:56:39 2015 +0100
+
+    Added leaf script and added cocoon to story
+    
+    Added the cocoon sprite to the story to appear on page 12. Modified
+    Bookmaster to accomodate this new character.
+    
+    Added leaf sprite to the story which apears on pages 1, 2 and 10.
+    Modified Bookmaster to accomodate this new scenery.
+    
+    Added leaf script to move it around on different pages using the same
+    method as in the CaterpillarAction() function. The function LeafAction()
+    is called every frame in Update().
+    
+    Changed Static Sprite Sun to a .png to see if there was a way in Unity to
+    convert a 255, 255, 255 RGB into a 0 alpha but I couldn't find one.
+
+[33mcommit 1c00dad110ed3d525c5e7bb2efec3c0209f5daf0[m
+Author: Nick Bedford <nickbedford@sky.com>
+Date:   Fri Oct 2 08:52:20 2015 +0100
+
+    Updated prefabs to the ones used in the scene.
+    
+    These prefabs are: Broken Egg, Butterfly, Caterpillar, Egg, Moon, Static
+    Sprite Caterpillar Stomach Ache, Static Sprite Sun and Sun.
+
+[33mcommit f1cbb173f5447e6878a1a823e3929e5aca74720f[m
+Author: Nick Bedford <nickbedford@sky.com>
+Date:   Thu Oct 1 16:02:14 2015 +0100
+
+    Finished all characters
+    
+    Added all current character builds into thier prefabs.
+    
+    Made the caterpillar's animations trigger on queue by modifing the
+    CaterpillarAction() function in the Caterpillar script.
+    
+    Unlooped the growth animation which was causing caterpillar to grow and
+    shrink instead of just grow. Also changed the animation controller to use
+    the non-looping animation.
+    
+    Added a GameObject called stomachAcheCaterpillar which is needed for one
+    of the pages in the book.
+
+[33mcommit 63886064620d14b43bc6dae1d59c45aebb867794[m
+Author: Nick Bedford <nickbedford@sky.com>
+Date:   Thu Oct 1 15:13:24 2015 +0100
+
+    Completed all of the idle caterpillar movements
+    
+    Modified BookMaster script to activate and deactivate the caterpillar in
+    the appropriate cases in the HandleScene() function.
+    
+    Added script to the caterpillar which transforms the caterpillar depending on
+    the current page. Has been as a fuction named CaterpillarAction(), which
+    is called in Update() every frame. CaterpillarAction() has cases for pages: 3, 4,
+    5, 6, 7, 8, 9 part 1 and 10. These are cases: 4, 5, 6, 7, 8, 9, 10 and 12
+    respectivly.
+    
+    Also changed the size of the butterfly at the end of the book.
+
+[33mcommit 0b2cf78c15f7720d44bd865c8df0bb831a27a89a[m
+Merge: f6429ad 897eca7
+Author: Nick Bedford <nickbedford@sky.com>
+Date:   Thu Oct 1 14:02:40 2015 +0100
+
+    Merge https://github.com/Tohaveaname/UnityProject
+
+[33mcommit f6429ad3aa269aefaabb3857fff4715a356f6662[m
+Author: Nick Bedford <nickbedford@sky.com>
+Date:   Thu Oct 1 13:39:20 2015 +0100
+
+    Created placeholders up to page 4
+    
+    Modified Bookmaster to handle all actors and props with
+    a new function called HandleScene(). This is a switch statement
+    based on which is the current page similar to the HandleText()
+    function. Currently handles: moon, egg, brokenEgg, sunStatic,
+    sunAnimation, caterpillar, butterfly and all in game text.
+    
+    Added these GameObjects to the Bookmaster script:
+    moon, egg, brokenEgg, sunStatic, sunAnimation, caterpillar,
+    butterfly.
+    
+    Added a static sprite of the sun, so the animation smiling
+    animation does not start at the incorrect place.
+    
+    Added comments to make the switch statement easier to see
+    what was happening when.
+    
+    Added commented out code for the food to the HandleScene()
+    switch statement for future use.
+
+[33mcommit 897eca7ce9323cd58fab00c417352a44640262b1[m
+Author: Nick Bedford <nickbedford@sky.com>
+Date:   Thu Oct 1 13:39:20 2015 +0100
+
+    Created placeholders up to page 3
+    
+    Modified Bookmaster to handle all actors and props with
+    a new function called HandleScene(). This is a switch statement
+    based on which is the current page similar to the HandleText()
+    function. Currently handles: moon, egg, brokenEgg, sunStatic,
+    sunAnimation, caterpillar, butterfly and all in game text.
+    
+    Added these GameObjects to the Bookmaster script:
+    moon, egg, brokenEgg, sunStatic, sunAnimation, caterpillar,
+    butterfly.
+    
+    Added a static sprite of the sun, so the animation smiling
+    animation does not start at the incorrect place.
+    
+    Added comments to make the switch statement easier to see
+    what was happening when.
+    
+    Added commented out code for the food to the HandleScene()
+    switch statement for future use.
+
+[33mcommit 799ccd9c164a4924c6c4a6eabebcf26f55397976[m
+Author: Nick Bedford <nickbedford@sky.com>
+Date:   Thu Oct 1 11:15:42 2015 +0100
+
+    Fixed a problem where the text did not appear.
+    
+    The Book master script was not working properly as
+    all the in the game text was not appearing.
+    
+    Added the HandleText() function to Update() inside the
+    space pressed if statement . Adding it on space press
+    prevented the switch statement running every frame.
+    Also removed Start Disabled script from page one, as
+    this prevented the first paragraph being shown.
+
+[33mcommit 2f73206bcde57e0c548ad854abd4aa9abc81b32e[m
+Author: Nick Bedford <nickbedford@sky.com>
+Date:   Thu Oct 1 09:20:53 2015 +0100
+
+    Added all of the project's files to repositry.
+
+[33mcommit e25824e6d47e27a541f39cfac57c4b339d873a19[m
+Author: Tohaveaname <nickbedford@sky.com>
+Date:   Thu Oct 1 08:42:10 2015 +0100
+
+    Initial commit
