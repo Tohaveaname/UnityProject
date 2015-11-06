@@ -1,0 +1,144 @@
+fileFormatVersion: 2
+guid: f93158a5b63145c4a8ec45110d6775d8
+timeCreated: 1446719337
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ColourButterflyMove_0
+    21300002: ColourButterflyMove_1
+    21300004: ColourButterflyMove_2
+    21300006: ColourButterflyMove_3
+    21300008: ColourButterflyMove_4
+    21300010: ColourButterflyMove_5
+    21300012: ColourButterflyMove_6
+    21300014: ColourButterflyMove_7
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: ColourButterflyMove_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1480
+        width: 1294
+        height: 529
+      alignment: 9
+      pivot: {x: .494214922, y: .414938688}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ColourButterflyMove_1
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 1527
+        width: 1292
+        height: 495
+      alignment: 9
+      pivot: {x: .493691176, y: .350153893}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ColourButterflyMove_2
+      rect:
+        serializedVersion: 2
+        x: 2687
+        y: 1527
+        width: 1292
+        height: 535
+      alignment: 9
+      pivot: {x: .484227985, y: .323268652}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ColourButterflyMove_3
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 915
+        width: 1291
+        height: 493
+      alignment: 9
+      pivot: {x: .495580465, y: .354506046}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ColourButterflyMove_4
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 869
+        width: 1294
+        height: 530
+      alignment: 9
+      pivot: {x: .494330913, y: .415414482}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ColourButterflyMove_5
+      rect:
+        serializedVersion: 2
+        x: 2689
+        y: 735
+        width: 1198
+        height: 631
+      alignment: 9
+      pivot: {x: .521682441, y: .562458396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ColourButterflyMove_6
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 72
+        width: 1122
+        height: 668
+      alignment: 9
+      pivot: {x: .523151159, y: .628724813}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ColourButterflyMove_7
+      rect:
+        serializedVersion: 2
+        x: 1371
+        y: 140
+        width: 1198
+        height: 632
+      alignment: 9
+      pivot: {x: .52018714, y: .556690574}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
