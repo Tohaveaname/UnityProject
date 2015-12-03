@@ -54,35 +54,35 @@ public class Caterpillar : MonoBehaviour {
             //Page 5.
             //Moves and scales the caterpillar.
             case 9:
-                gameObject.transform.localScale = new Vector3(0.7f, 0.7f, 0);
+                gameObject.transform.localScale = new Vector3(0.8f, 0.8f, 0);
                 gameObject.transform.position = new Vector3(3.9f, -0.3f, 0);
                 break;
 
             //Page 6.
             //Moves and scales the caterpillar.
             case 10:
-                gameObject.transform.localScale = new Vector3(-0.5f, 0.5f, 0);
+                gameObject.transform.localScale = new Vector3(-0.7f, 0.7f, 0);
                 gameObject.transform.position = new Vector3(-4.8f, -1.9f, 0);
                 break;
 
             //Page 7.
             //Moves and scales the caterpillar.
             case 11:
-                gameObject.transform.localScale = new Vector3(0.4f, 0.4f, 0);
+                gameObject.transform.localScale = new Vector3(0.6f, 0.6f, 0);
                 gameObject.transform.position = new Vector3(5.2f, 1.6f, 0);
                 break;
 
             //Page 8.
             //Moves and scales the caterpillar.
             case 12:
-                gameObject.transform.localScale = new Vector3(-0.35f, 0.35f, 0);
+                gameObject.transform.localScale = new Vector3(-0.6f, 0.6f, 0);
                 gameObject.transform.position = new Vector3(-4.8f, -1.9f, 0);
                 break;
 
             //Page 9 part 1.
             //Moves and scales the caterpillar.
             case 13:
-                gameObject.transform.localScale = new Vector3(0.4f, 0.4f, 0);
+                gameObject.transform.localScale = new Vector3(0.6f, 0.6f, 0);
                 gameObject.transform.position = new Vector3(3.6f, -2f, 0);
                 break;
 
